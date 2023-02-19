@@ -8,9 +8,7 @@ export const Statistics = ({
     return (
         <section className={css.statistics}>
             <div className={ css.wrapper}>
-            {title.length > 0 && (
-                    <h2 className={css.title}>{title}</h2>
-             )}
+            {title && <h2 className={css.title}>{title}</h2>}
                 <ul className={css.statList}>
                 {stats.map(stat => (
                     <li className={css.item} key={stat.id}>
